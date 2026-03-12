@@ -107,12 +107,12 @@ class GeometryAndThermal:
     cp_H2O: float = 4180.0
     h_stack_air: float = 12.0
 
-    f_cell: float = 1.1
+    f_cell: float = 1.25
 
     t_electrode: float = 0.5e-3
     t_endplates: float = 10.0e-3
-    rho_electrode: float = 8000.0
-    cp_electrode: float = 500.0
+    rho_electrode: float = 8900.0
+    cp_electrode: float = 444.0
 
     t_gasket: float = 0.5e-3
     rho_gasket: float = RHO_PTFE_KG_M3
@@ -2142,6 +2142,7 @@ t4.write(
     f"- Total gasket area: **{thermo['A_gasket_total_m2']:.2f} m²**  \n"
     f"- Gasket (PTFE) mass: **{thermo['m_gasket_kg']:.2f} kg**"
 )
+
 
 
 
